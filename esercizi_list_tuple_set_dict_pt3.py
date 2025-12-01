@@ -24,4 +24,22 @@ d = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 inversione = {v: k for k, v in d.items()}
 print("Dizionario invertito:", inversione)
 
+#esercizio 5
+chiavi = ['nome', 'cognome', 'età']
+valori = ['Luca', 'Rossi', 21]
+dizionario = dict(zip(chiavi, valori))
+print("Dizionario creato con zip:", dizionario)
 
+#esercizio 6
+parole = ['casa', 'auto', 'casa', 'albero', 'auto', 'fiore']
+gruppi = {}
+for parola in parole:
+    gruppi.setdefault(len(parola), []).append(parola)
+print("Parole raggruppate per lunghezza:", gruppi)
+
+#esercizio 7
+testo = "Questo è un esempio di testo con alcune parole ripetute parole testo esempio"
+frequenza = {}
+for c in testo:
+    frequenza[c] = frequenza.get(c, 0) + 1
+print("Frequenza dei caratteri nel testo:", frequenza)

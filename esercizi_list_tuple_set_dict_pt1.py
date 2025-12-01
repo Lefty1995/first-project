@@ -32,7 +32,7 @@ tuples = [(1, 2), (3, 4), (5, 6)]
 somma = sum([sum(t) for t in tuples])
 print("Somma di tutti gli elementi nelle tuple:", somma)
 
-
-
-
-
+#esercizio 7
+numeri = [12, 3, 45, 7, 9]
+risultato = (min(numeri), max(numeri))
+print("Valore minimo e massimo:", risultato)

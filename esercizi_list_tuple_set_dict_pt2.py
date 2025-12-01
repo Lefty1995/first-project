@@ -31,3 +31,14 @@ c = {7, 8}
 differenza = A ^ B ^ c
 print("Differenza simmetrica tra i set:", differenza)
 
+#esercizio 7
+frase = 'ciao come stai ciao tutto bene'
+uniche = set(frase.split())
+print("Parole uniche nella frase:", uniche)
+
+#esercizio 8
+liste =[[1, 2, 3], [3, 4, 5], [6, 7, 8, 9]]
+unione = set().union(*map(set, liste))
+print("Unione di tutti gli elementi nelle liste:", unione)  
+
+
